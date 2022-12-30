@@ -11,7 +11,6 @@ int main()
     int num = 0; // 숫자를 입력받을 변수 선언.
     char a = 0; // 연산자를 받을 변수 선언.
     int value = 0; // 합을 입력받을 변수 선언.
-    char yn; //Close를 입력받을 변수 선언.
     while (1)
     {
             cin >> num;
@@ -51,20 +50,16 @@ int main()
             {
                 cout << value << endl;
                 cout << "Close? y or n" << endl;
-                cin >> yn;
-                if (yn == 'y')
+                cin >> a;
+                if (a == 'y'|| a == 'n')
                 {
                     break;     // y를 눌렀을 때 프로그램 종료
                 }
-                if (yn == 'n')
-                {
-                    
-                    break;
-                }
+               
             }
 
         }
-        if (yn == 'y')
+        if (a == 'y')
         {
             break;     // y를 눌렀을 때 프로그램 종료
         }
